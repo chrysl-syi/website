@@ -1,0 +1,200 @@
+%reset {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+div,
+span,
+ul,
+h3 {
+    @extend %reset;
+}
+
+html {
+    @extend %reset;
+    background: #ffffff;
+    font-size: 16px;
+    font-family: PingFang SC, Lantinghei SC, Microsoft YaHei, HanHei SC, Helvetica Neue, Open Sans, Arial, Hiragino Sans GB, Microsoft YaHei UI, STHeiti, WenQuanYi Micro Hei, SimSun, sans-serif
+}
+
+body {
+    @extend %reset;
+    width: 100vw;
+    height: 100vh;
+    background-position: 50%;
+    background-size: cover
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.blur {
+    padding: 20px 15px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.blur:hover {
+    opacity: 1;
+    transition: opacity 0.2s ease 0.1s;
+}
+
+// style
+
+.backgroundsrc {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    user-select: none;
+}
+
+video.backgroundsrc {
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+$sidebar-padding-w: 10px;
+$sidebar-padding-h: 15px;
+$sidebar-width: 35px;
+$sidebar-height: calc(100% - 2 * $sidebar-padding-h);
+$main-margin-w: 2 * ($sidebar-padding-w) + $sidebar-width;
+$main-padding-w: 15px;
+$main-width: calc(100% - 2 * ($main-margin-w + $main-padding-w));
+
+.main {
+    margin: 0 $main-margin-w;
+    padding: 0 15px;
+    width: $main-width;
+    height: 100%
+}
+
+.main-grid {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr auto 72px 46px 16px auto 0px 0px 1fr 64px;
+}
+
+.sidebar {
+    position: absolute;
+    right: 0;
+    padding: $sidebar-padding-h $sidebar-padding-w;
+    width: $sidebar-width;
+    height: $sidebar-height;
+    justify-content: flex-end;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.sidebar-container {
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background: #f4f4f4
+}
+
+.sidebar-container:hover {
+    background: #eaeaea
+}
+
+.sidebar-container .imag {
+    width: 16px;
+    height: 16px;
+}
+
+.sidebar-interval {
+    margin-top: 20px
+}
+
+.copyright {
+    position: absolute;
+    bottom: 10px;
+    width: $main-width;
+    color: #999;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    user-select: none;
+}
+
+.siteicon {
+    grid-row: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.siteicon-container {
+    width: 50px;
+    height: 60px;
+    padding: 0px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+
+.siteicon-frame {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    background-color: rgba($color: #ffffff, $alpha: 0.8);
+    box-shadow: rgba($color: #000000, $alpha: 0.2) 0px 2px 4px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.siteicon-container a {
+    cursor: pointer;
+}
+
+.sidebar-container span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.siteicon-container .imag {
+    width: 24px;
+    height: 24px;
+    margin: 0px auto;
+}
+
+.siteicon-container .text {
+    height: 16px;
+    width: 100%;
+    padding: 0px;
+    margin: 2px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    color: rgba($color: #000000, $alpha: 0.9);
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    white-space: nowrap;
+    text-decoration: none;
+}

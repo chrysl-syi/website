@@ -1,0 +1,22 @@
+<svg width="1000" height="1000" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" fill="#000000">
+<rect x="0" y="0" width="1000" height="1000" stroke="black"/>
+ <g id="Layer_1">
+  <title>Layer 1</title>
+  <g stroke="null" id="svg_4">
+   <g stroke="null" id="svg_3" stroke-width="0"/>
+   <g stroke="null" id="svg_2" stroke-linecap="round" stroke-linejoin="round" transform="matrix(1.27354 0 0 -1.27354 -1444.65 1272.47)"/>
+   <g stroke="null" transform="matrix(1.27354 0 0 -1.27354 -1444.65 1272.47)" id="svg_1">
+    <title stroke="null">ionicons-v5-j</title>
+    <path stroke="white" id="svg_5" d="m1526.96645,606.55137s-48,-96 -126,-96c-54.12,0 -98,43 -98,96s43.88,96 98,96c37.51,0 71,-22.41 94,-48" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32px"/>
+    <path stroke="white" id="svg_6" d="m1526.96645,606.55137s48,96 126,96c54.12,0 98,-43 98,-96s-43.88,-96 -98,-96c-37.51,0 -71,22.41 -94,48" fill="none" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32px"/>
+   </g>
+  </g>
+  <g stroke="null" id="svg_7">
+   <path stroke="white" id="svg_8" fill="white" d="m274.88878,259.22712l0,-235.66098a23.5661,23.5661 0 1 0 -47.1322,0l0,235.66098l-170.85421,170.85421a23.5661,23.5661 0 1 0 33.32753,33.32753l170.85421,-170.85421l235.66098,0a23.5661,23.5661 0 1 0 0,-47.1322l-235.66098,0l13.80467,13.80467z"/>
+  </g>
+  <g transform="rotate(180 715.157 764.856)" stroke="null" id="svg_10">
+   <path stroke="white" id="svg_9" fill="white" d="m704.90154,788.91584l0,-235.66098a23.5661,23.5661 0 1 0 -47.1322,0l0,235.66098l-170.85421,170.85421a23.5661,23.5661 0 1 0 33.32753,33.32753l170.85421,-170.85421l235.66099,0a23.5661,23.5661 0 1 0 0,-47.1322l-235.66099,0l13.80467,13.80467z"/>
+  </g>
+ </g>
+
+</svg>
